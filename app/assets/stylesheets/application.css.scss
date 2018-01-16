@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ 
+ /*
+ Can use classes, etc. from any html page in pages
+ */
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
@@ -21,11 +25,18 @@ h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
-body, .navbar {
+.navbar, .home-callout {
     //Gradient provided by https://webgradients.com/?ref=producthunt
     background-image: linear-gradient(to left, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
 }
 
 .navbar {
     border: none;
+}
+
+.home-callout {
+    margin-top: -20px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: navy;
 }
