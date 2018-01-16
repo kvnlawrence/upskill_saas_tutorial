@@ -20,3 +20,12 @@
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
+
+body, .navbar {
+    //Gradient provided by https://webgradients.com/?ref=producthunt
+    background-image: linear-gradient(to left, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+
+.navbar {
+    border: none;
+}
