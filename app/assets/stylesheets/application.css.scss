@@ -34,20 +34,16 @@ h1, h2, h3 {
     border: none;
 }
 
-.navbar-default .navbar-brand {
-    color: #1D416C;
-}
-
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
     color: #1D416C;
+    &:hover {
+        color: #1D416C;
+        opacity:0.75;
+    }
 }
 
-.navbar-default .navbar-brand:hover {
-    color: #1D416C;
-    opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default  {
     color: #1D416C;
     opacity:0.75;
 }
