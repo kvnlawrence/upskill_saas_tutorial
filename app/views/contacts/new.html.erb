@@ -3,12 +3,16 @@
         <h3 class="text-center">Contact Us</h3>
             
             <div class="col-md-4 col-md-offset-4">
+                <%= flash[:notice] %> 
+                <!-- shows messages from contacts_controller -->
                 <div class="well">
                     <!-- Put form-group div class on each entry, 
                     not the whole form. Doing so made them on their
                      own lines
                     <!-- Can add class fields to the RAILS text fields-->
-                    <%= form_for "/contacts" do |f| %>
+                    <%= form_for @contact do |f| %>
+                    <!--Changed from "/contacts" to isntance variable in 
+                    controller file-->
                         <div class="form-group">
                             <%= f.label :name %>
                             <%= f.text_field :name, class: 'form-control' %>
