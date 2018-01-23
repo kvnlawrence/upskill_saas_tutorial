@@ -38,7 +38,16 @@ We'll learn that later
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
-    
+      <div class="container">
+        <% flash.each do |type, msg| %>
+         <!-- shows messages from contacts_controller -->
+          <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+          <!--Used rails to create div for us
+          String interpulation. Type refers to key we use, danger or success
+          msg assigns to whatever assigned to keys in hash (like "Message sent")
+        <% end %>
+        #Moved from to here new.html.erb so they wouldn't only see flash messages
+        when on the contact form. 
       <%= yield %>
   </body>
 </html>

@@ -10,7 +10,7 @@ def create
     flash[:success] = "Message sent."
      redirect_to new_contact_path
   else
-    flash[:error] = @contact.errors.full_messages.join(", ")
+    flash[:danger] = @contact.errors.full_messages.join(", ")
     #.join takes anything from an array--[x..y]--into a string
     #full_messages.join is providing all rails expected messages 'name can't be
     #blank, emails can't be blank, etc.
