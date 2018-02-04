@@ -1,7 +1,17 @@
+=begin
+When server gets get request it looks at routes.rb and finds the right controller action. 
+Controller sends right model and view file
+=end
+
 class ContactsController < ApplicationController
     def new
   @contact = Contact.new
 end
+=begin
+  ^ MVC example: Controller action does two things. 
+  1) Rails is asked to read corrosponding model file 'Contact' and learns of validations. 
+  2) Rails looks for corrosponding view-file name (i.e. new)
+=end
 
 def create
   @contact = Contact.new(contact_params)
@@ -23,3 +33,4 @@ private
   end
         #Adds requirement
 end
+
