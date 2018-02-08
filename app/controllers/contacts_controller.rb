@@ -17,6 +17,13 @@ def create
   @contact = Contact.new(contact_params)
   # This is mass assigning each contact w/ fields w/ the params.require below
   if @contact.save
+    name = params[:contact][:name]
+    email = params[:contact][:email]
+    body = params[:contact][:comments]
+    ContactMailer.contact_email(name, email, body).deliver
+    #Goes into contact form grab the name,email,comments, 
+    #associates it with corrosponding variables 
+    #then uses it in the next line
     flash[:success] = "Message sent."
      redirect_to new_contact_path
   else
