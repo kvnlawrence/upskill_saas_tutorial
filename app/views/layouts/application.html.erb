@@ -28,11 +28,15 @@ Adding code will show up everywhere. Good for stuff like a navbar.
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
         <div class="nav navbar-nav navbar-right">
-          <%= link_to "Log In", new_user_session_path, class: "btn btn-default navbar-btn" %>
-          <!-- Could have had "/users/signin" instead of new_user_session but 
-          best practice is to include path name from either routes.rb or using 
-          the rails routes command to find the 'prefix'-->
-          <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default navbar-btn" %>
+          <% if user_signed_in? %>
+            <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-default navbar-btn" %>
+          <% else %>
+            <%= link_to "Log In", new_user_session_path, class: "btn btn-default navbar-btn" %>
+            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default navbar-btn" %>
+            <!-- Could have had "/users/signin" instead of new_user_session but 
+            best practice is to include path name from either routes.rb or using 
+            the rails routes command to find the 'prefix'-->
+          <% end %>
         </div>
       <ul class="nav navbar-nav navbar-right">
         <!-- Could write this w/ raw html using <a href='/about_us" class="x">About Us</a>
