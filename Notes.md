@@ -44,3 +44,8 @@ exp <%= link_to .... %>
 Using Rails Routes command
 'Get' request means it's a url they can go to
 'Post' is a url they can submit a form to. It's not a page unless it says 'get'
+
+Don't confuse css 'class' with object orientated programing 'class' (in ruby files). Different! 
+    CSS class starts with a . like .alert-notice { ... }
+    Ruby class 'class PagesController ....' is different
+    
