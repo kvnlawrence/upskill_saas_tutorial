@@ -23,3 +23,10 @@ It works something like this:
     
     
 Typing "lorem" on html pages then tab will provide extra text
+
+BOOTSTRAP
+You'll get used to adding container-row-column for each view page
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+        ...page...
