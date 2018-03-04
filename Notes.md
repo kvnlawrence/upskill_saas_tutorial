@@ -30,3 +30,17 @@ You'll get used to adding container-row-column for each view page
   <div class="row">
     <div class="col-md-4">
         ...page...
+Add grey background using <div class="well"> 
+Added 'form-group' into every existing form div to add bootstrap spacing. 
+Added to existing form fields either ', class: 'form-control'' or ',class: 'btn btn-success''
+Use 'navbar-btn' anytime your using navbar buttons in boostrap
+
+RAILS IN HTML FILES 
+If you just want to compute something in that background you only need <% %>
+exp <% 2+2 %>
+If you want to show anything on the page you'll need to add =
+exp <%= link_to .... %>
+
+Using Rails Routes command
+'Get' request means it's a url they can go to
+'Post' is a url they can submit a form to. It's not a page unless it says 'get'
