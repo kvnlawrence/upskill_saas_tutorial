@@ -49,3 +49,26 @@ Don't confuse css 'class' with object orientated programing 'class' (in ruby fil
     CSS class starts with a . like .alert-notice { ... }
     Ruby class 'class PagesController ....' is different
     
+RUBY CLASSES. MAKING YOUR OWN CLASS
+From austin: A class is a group of functions (maybe also objects?)
+Classes are given a name in CamelCase like ContactsController
+
+Example from https://www.youtube.com/watch?v=7myNdQyitXs :
+
+class Warrior
+    def initialize (name, clan, strength, dexterity)
+        @name = name
+        @clan = clan
+        @strength = strength
+        @dexterity = dexterity
+    end
+
+    def about
+        puts "#{@name} is is a Warrior from the clan of #{@clan} with a strength 
+        of #{strength} and a dexterity of #{@dexterity}."
+    end
+    
+player_1 = Warrior.new ("Adolin","windrunners",50,99)
+player_2 = Warrior.new ("Amaram","Sons of Honor",99, 50)
+
+player_1.about      (will give sentence from def.about)
