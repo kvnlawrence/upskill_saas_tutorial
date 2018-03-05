@@ -16,7 +16,10 @@ Not sure why I have an entry for home and about but not contact us.
 
 
 class PagesController < ApplicationController
+    # Get request for / which is our home page
     def home
+        @basic_plan = Plan.find(1)
+        @pro_plan = Plan.find(2)
     end
 end
 
