@@ -72,3 +72,29 @@ player_1 = Warrior.new ("Adolin","windrunners",50,99)
 player_2 = Warrior.new ("Amaram","Sons of Honor",99, 50)
 
 player_1.about      (will give sentence from def.about)
+
+---
+Can use instance params in view files
+Anything after a ? in a url is information we can use in the next page
+
+Models in rails is heavily tied to the schedma file too. If we say we drew it from
+ActiveRecord.
+If you're looking at a model like plan.rb also check that class against the 
+corrosponding database in the schema. 
+
+ACTIVE RECORD
+Active Record is a shortcut through SQL the creators of rails made. Typing in "Contact.all" 
+is actuall a Select command. You can add to_sql for any of these. Exp Contact.all.to_sql
+Even @basic_plan = plan.find(1) is actually a shortcut through sql. 
+When writing things in the console it's being trasnferred to sql.
+Active record = active record querey language
+
+PARAMATERS
+Two kinds:
+1. Sent from query string params (everything after ? in url)
+2. Sent as part of POST data (through html form, like signup form)
+
+SUBSTITUTION
+Mentally interchanging what you see when you're coding. Important skill for developers
+
+

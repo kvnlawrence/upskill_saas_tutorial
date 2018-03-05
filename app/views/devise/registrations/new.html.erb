@@ -4,8 +4,12 @@
       <!-- typical bootstrap intro. Containter, row, column. Used
       col-md-offset-4 to center it in the 12 column system -->
         <div class="well">
+          <% if params[:plan] == '2' %>
+            <h2>Pro Account Sign up Form</h2>
+          <% else %>
+            <h2>Basic Account Signup Form</h2>
+          <% end %>
           <h2>Sign up</h2>
-          
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
             <%= devise_error_messages! %>
           
