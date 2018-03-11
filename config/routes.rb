@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   # including /new_contact, edit_contact, and many more.  
  get 'contact-us', to: 'contacts#new', as: 'new_contact'
    # ^Changes URL from contacts/new to contact-us
+ get 'my-hubspot', to: 'pages#myhubspot'
  end
 
 # Get requests are the most common requests, sent anytime you go to x.com 

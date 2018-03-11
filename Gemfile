@@ -28,14 +28,14 @@ gem 'jbuilder', '2.5.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Use Twitter Bootstrap library for front-end UI and layout
+# Use Twitter Bootsrap library for front-end UI and layout
 gem 'bootstrap-sass', '3.3.7'
 
 # Use Font Awesome sass gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
 
-# Use Hirb gem for better console data presentation
-gem 'hirb', '0.7.2'
+# Use Hirb for better database table display in console
+gem 'hirb', '0.7.3'
 
 # Use Devise for user authentication
 gem 'devise', '4.2.0'
@@ -43,8 +43,21 @@ gem 'devise', '4.2.0'
 # Use Stripe for payment processing
 gem 'stripe', '1.48.0'
 
-# Use figaro for ENV variables 
+gem 'bootstrap-sass', '3.3.7'
+
+# Use Figaro for ENV variables
 gem 'figaro', '1.1.1'
+
+# Use Hubspot for reasons
+gem "hubspot-ruby"
+
+# Use omniauth-hubspot for OAuth 2.0 installation
+gem 'omniauth-hubspot', '~> 0.1.0', github: 'advocately/omniauth-hubspot'
+
+# Ruby HTTP library
+gem "http"
+
+gem "bootstrap-table-rails"
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record

@@ -25,3 +25,6 @@ end
 
     def about
     end
+    
+    def myhubspot
+    end

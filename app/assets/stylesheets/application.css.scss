@@ -17,11 +17,16 @@
  /*
  Can use classes, etc. from any html page in pages
  */
+ 
+ /*
+ *= require bootstrap-table
+ */
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+
 
 // Typography styles
 
@@ -82,4 +87,13 @@ h1, h2, h3 {
 
 .home-signup-links {
     margin-top: 30px;
+}
+
+.thead {
+    background: #fad0c4;
+    color: #1D416C;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
